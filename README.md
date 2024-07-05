@@ -35,7 +35,10 @@ This Next.js application provides a user-friendly interface for browsing product
 3. Install dependencies:
 
    ```bash
-   npm install or yarn
+   npm install
+   ```
+   ```bash
+   yarn
    ```
 
 **Running the Application**
@@ -43,7 +46,10 @@ This Next.js application provides a user-friendly interface for browsing product
 1. Start the development server:
 
    ```bash
-   npm run dev or yarn run dev
+   npm run dev
+   ```
+   ```bash
+   yarn run dev
    ```
 
 2. Open http://localhost:3000 in your web browser.
