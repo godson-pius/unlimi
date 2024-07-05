@@ -51,7 +51,7 @@ const Table = () => {
                         </tr>
                     </thead>
                     <tbody className="bg-white divide-y divide-gray-200">
-                        {data ? data.filter((user) => (context.patientSearch.toLowerCase().trim() == "" ? data : user.Name ? user?.Name.toLowerCase().includes(context.patientSearch.toLowerCase()) : null || user.Title ? user?.Title.toLowerCase().includes(context.patientSearch.toLowerCase()) : null)).map((person, index) => (
+                        {data ? data.filter((user) => (context.patientSearch.toLowerCase().trim() == "" ? data : user.Name ? user?.Name.toLowerCase().includes(context.patientSearch.toLowerCase()) : null || user.Title ? user?.Title.toLowerCase().includes(context.patientSearch.toLowerCase()) : null || user?.Quantity == parseInt(context.patientSearch) || user?.['Cost Price'] == parseInt(context.patientSearch) )).map((person, index) => (
                             <tr key={person.SKU}>
                                 <td className="px-6 py-4 whitespace-nowrap text-xs">
                                     <input checked={checked} type="checkbox" name="" id="" />

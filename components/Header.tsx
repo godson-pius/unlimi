@@ -28,7 +28,7 @@ const Header = () => {
                         </select>
                         <div className="search flex items-center ring-1 ring-gray-200 rounded-lg px-4 gap-2">
                             <FiSearch className='text-gray-400' />
-                            <input onChange={(e) => handlePatientSearch(e)} type="search" name="search" id="search" placeholder='Search by patients...' className='font-light text-xs placeholder:text-gray-500 outline-none w-56' />
+                            <input onChange={(e) => handlePatientSearch(e)} type="search" name="search" id="search" placeholder='Search by name, title, qty & price...' className='font-light text-xs placeholder:text-gray-500 outline-none w-56' />
                         </div>
                     </div>
                 </section>
